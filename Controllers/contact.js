@@ -24,6 +24,7 @@ export const newcontact = async (req, res) => {
         email,
         phone,
         type,
+        user:req.user
     });
 
     res.json({ message: "contact saved succesfully..", saveContact, success: true })
